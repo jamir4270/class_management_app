@@ -17,12 +17,7 @@
   --accent: #31e28d;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* Removed invalid @theme block. If you need these variables, add them to :root or configure in Tailwind config. */
 
 body {
   background: var(--background);
