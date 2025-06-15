@@ -1,8 +1,11 @@
-export default function Login() {
-  return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+import Link from "next/link";
+import React from "react";
+
+const SignUp = () => {
+    return (
+        <div className="flex flex-col items-center justify-center min-h-screen bg-[--background]">
         <h1 className="text-4xl font-bold mb-6">Welcome Back!</h1>
-        <form className="flex flex-col items-center space-y-4 mt-10 w-[500px] bg-white p-6 border-radius-[8px] shadow-md">
+        <form className="flex flex-col items-center space-y-4 mt-10 w-[500px] bg-white p-6 rounded-xl shadow-md">
             <h1 className="text-2xl font-bold mb-4">Login</h1>
             <p className="text-gray-600 mb-4">Please enter your credentials</p>
             <input
@@ -17,14 +20,16 @@ export default function Login() {
             />
             <button
                 type="submit"
-                className="bg-blue-500 text-white p-2 rounded w-64 hover:bg-blue-600"
+                className="bg-[#31e28d] text-[#080808] p-2 rounded w-64 hover:bg-[#28c77a]"
             >
                 Login
             </button>
             <p className="text-gray-500 text-sm mt-4">
-                Don't have an account? <a href="/signup" className="text-blue-500 hover:underline">Sign Up</a>
+                Don't have an account? <Link href="/signup" className="text-blue-500 hover:underline">Sign Up</Link>
             </p>
         </form>
     </div>
-  );
+    )
 }
+
+export default SignUp;
